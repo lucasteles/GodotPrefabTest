@@ -21,7 +21,7 @@ public partial class EnemyManager : Node
 
     IEnumerable<Enemy> DefaultWay()
     {
-        var prefab = Prefab.Find("enemy");
+        var prefab = Prefab.Load("enemy");
 
         for (var i = 0; i < enemyCount; i++)
         {
